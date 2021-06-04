@@ -1,0 +1,19 @@
+{
+  "name": "airportif",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NazarTymiv/airportIF.git"
+  },
+  "author": "TripToon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NazarTymiv/airportIF/issues"
+  },
+  "homepage": "https://github.com/NazarTymiv/airportIF#readme"
+}
