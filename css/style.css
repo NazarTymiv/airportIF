@@ -69,7 +69,7 @@
 }
 .about{
     width: 100%;
-    height: 100%;
+    height: 89%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,13 +147,13 @@
     display: flex;
 }
 .content__booking{
-    width: 40%;
+    width: 50%;
     height: auto;
 }
 .booking__title{
     width: auto;
     height: auto;
-    margin: 31px 0px 0px 130px;
+    margin: 31px 0px 0px 132px;
 }
 .booking__title-part{
     font-size: 30px;
@@ -189,15 +189,16 @@
     height: auto;
 }
 .flights{
-    width: auto;
+    width: 100%;
     height: auto;
     display: flex;
+    justify-content: space-around;
 }
 .flights__item{
     width: 307px;
     height: 307px;
     background: #C4C4C4;
-    margin: 115px 0px 0px 67px;
+    margin: 115px 0px 0px 0px;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
