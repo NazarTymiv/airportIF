@@ -7,3 +7,249 @@
     text-decoration: none;
     list-style: none;
 }
+
+/* INDEX HTML */
+.container{
+    width: 100%;
+    height: auto;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/header-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-origin: content-box;
+}
+.header__body{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: auto;
+    height: auto;
+    margin-top: 29px;
+    padding-left: 71px;
+}
+.logo__item{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 25px;
+}
+.navigation{
+    width: auto;
+    height: auto;
+    margin-top: 29px;
+    padding-right: 71px;
+}
+.navigation__item{
+    color: rgba(255, 255, 255, 0.9);
+    padding: 19px;
+    font-size: 20px;
+}
+.line{
+    width: 91.5%;
+    height: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    padding-right: 46px;
+    margin: 9px 0px 0px 72px;
+}
+.about{
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.about__title{
+    width: auto;
+    height: auto;
+}
+.about__title-part{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 50px;
+    line-height: 59px;
+}
+.about__description{
+    width: auto;
+    height: auto;
+}
+.about__description-part{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 34px;
+    line-height: 40px;
+}
+.about__arrow{
+    margin-top: 100px;
+}
+.about__arrow-img{
+    user-select: none;
+}
+
+.reserve{
+    width: 100%;
+    height: 60vh;
+}
+.reserve__body{
+    width: 75%;
+    margin: 0 auto;
+}
+.reserve__buttons{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 41px;
+}
+.buttons__item-part{
+    width: 157px;
+    height: 46px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.buttons__item-img{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+.buttons__item-a{
+    background: #B55126;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.buttons__item-n{
+    background: #DDE0E1;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+    color: #9F9F9F;
+}
+.reserve__content{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.content__booking{
+    width: 40%;
+    height: auto;
+}
+.booking__title{
+    width: auto;
+    height: auto;
+    margin: 31px 0px 0px 130px;
+}
+.booking__title-part{
+    font-size: 30px;
+    color: #DADADA;
+}
+.booking__block{
+    width: 328px;
+    height: 416px;
+    margin: 3px 0px 0px 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.booking__block input{
+    width: 227px;
+    height: 46px;
+    margin: 36px 0px 0px 0px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+}
+.booking__block button{
+    width: 257px;
+    height: 53px;
+    background: #E3DFDB;
+    margin: 73px 0px 0px 0px;
+    border: none;
+}
+
+.content__flights{
+    width: 50%;
+    height: auto;
+}
+.flights{
+    width: auto;
+    height: auto;
+    display: flex;
+}
+.flights__item{
+    width: 307px;
+    height: 307px;
+    background: #C4C4C4;
+    margin: 115px 0px 0px 67px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tourism{
+    width: 100%;
+    height: 498px;
+    background-image: url(../img/tourism-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tourism__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tourism__title-part{
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin-top: 35px;
+}
+.tourism__line{
+    width: 90.7%;
+    margin: 20px 86px 0px 86px;
+    height: 1px;
+    border: 1px solid #FDAF35;
+}
+.tourism__vouchers{
+    width: 100%;
+    height: auto;
+}
+.vouchers{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.vouchers__item{
+    width: 289px;
+    height: 327px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: white;
+}
+.vouchers__item-part{
+    width: 223px;
+    height: 49px;
+    border: 3px solid #FDAF35;
+    box-sizing: border-box;
+    margin-bottom: 18px;
+}
+
+.footer{
+    width: 100%;
+    height: 124px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.footer__title-part{
+    font-size: 25px;
+    line-height: 35px;
+    color: #C4C4C4;
+}
