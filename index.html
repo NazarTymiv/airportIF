@@ -11,125 +11,50 @@
 
 <body>
     <div class="container">
-        <div class="header">
-            <div class="header__bg"></div>
-            <div class="header__body">
-                <div class="logo">
-                    <a href="" class="logo__item">
-                        Ivano-Frankivsk Airport
-                    </a>
+        <div class="header main__header">
+            <div class="header__topblock">
+                <div class="header__title">
+                    <h2 class="header__title-text"><a href="index.html">IVANO-FRANKIVSK AIRPORT</a></h2>
+                    <img src="img/logo.png" alt="logo" class="header__title-img">
                 </div>
-                <div class="navigation">
-                    <a href="" class="navigation__item">
-                        Туризм
-                    </a>
-                    <a href="" class="navigation__item">
-                        Квитки
-                    </a>
-                    <a href="./aboutus.html" class="navigation__item">
-                        Про нас
-                    </a>
-                </div>
+                
+                <ul class="header__nav">
+                    <li class="header__nav-item"><a href="#">Графік</a></li>
+                    <li class="header__nav-item"><a href="#">Квитки</a></li>
+                    <li class="header__nav-item"><a href="aboutus.html">Про нас</a></li>
+                    <li class="header__nav-item"><a href="#">Туризм</a></li>
+                    <li class="header__nav-item header__search"><a href="#"><img src="img/loop.png" alt="search"></a></li>
+                </ul>
             </div>
-            <div class="line">
-            </div>
-            <div class="about">
-                <div class="about__title">
-                    <span class="about__title-part">
-                        Lorem
-                    </span>
-                </div>
-                <div class="about__description">
-                    <span class="about__description-part">
-                        Lorem ipsum dolor sit amet
-                    </span>
-                </div>
-                <div class="about__arrow">
-                    <a href="#">
-                        <img class="about__arrow-img" src="img/about-arrow.png" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="reserve">
-            <div class="reserve__body">
-                <div class="reserve__buttons">
-                    <div class="buttons__item">
-                        <button class="buttons__item-part buttons__item-a">виліт<img class="buttons__item-img" src="img/button__image1.png"></button>
-                    </div>
-                    <div class="buttons__item">
-                        <button class="buttons__item-part buttons__item-n">приліт<img class="buttons__item-img" src="img/button__image2.png"></button>
+            <div class="header__banner mian__header-banner">
+                <div class="banner__weather">
+                    <img src="img/sun__sky.png" alt="sun__sky" class="banner__weather-img">
+                    <div class="weather__info">
+                        <p class="weather__info-text">
+                            <span>19°C - 66°F</span>
+                            <span>ХМАРНО</span>
+                        </p>
                     </div>
                 </div>
-                <div class="reserve__content">
-                    <div class="content__booking">
-                        <div class="booking__title">
-                            <span class="booking__title-part">
-                                Забронювати квиток
-                            </span>
+                <h2 class="header__banner-title">
+                    ПОЛЬОТИ<br /><span>РОБИТИ ЛЕГКО</span>
+                </h2>
+                <div class="banner__schedule">
+                    <div class="banner__schedule-line"></div>
+                    <div class="banner__buttons">
+                        <div class="banner__button banner__buttons-arrival banner__button-active">
+                            <p class="banner__buttons-text">ПРИБУТТЯ</p>
+                            <img src="img/right-down.png" alt="arrow-bottom-right" class="banner__buttons-img">
                         </div>
-                        <div class="booking__block">
-                            <input>
-                            <input>
-                            <input>
-                            <button class="booking__block-btn">Забронювати</button>
-                        </div>
-                    </div>
-                    <div class="content__flights">
-                        <div class="flights">
-                            <div class="flights__item">
-
-                            </div>
-                            <div class="flights__item">
-                                
-                            </div>
+                        <div class="banner__button banner__schedule-departure">
+                            <p class="banner__buttons-text">ВІДПРАВЛЕННЯ</p>
+                            <img src="img/right-down.png" style="transform: rotate(-90deg);" alt="arrow-top-right" class="banner__buttons-img">
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="tourism">
-            <div class="tourism__body">
-                <div class="tourism__title">
-                    <span class="tourism__title-part">
-                        Туризм
-                    </span>
-                </div>
-                <div class="tourism__line">
-
-                </div>
-                <div class="tourism__vouchers">
-                    <div class="vouchers">
-                        <div class="vouchers__item">
-                            <div class="vouchers__item-part">
-
-                            </div>
-                        </div>
-                        <div class="vouchers__item">
-                            <div class="vouchers__item-part">
-                                
-                            </div>
-                        </div>
-                        <div class="vouchers__item">
-                            <div class="vouchers__item-part">
-                                
-                            </div>
-                        </div>
-                        <div class="vouchers__item">
-                            <div class="vouchers__item-part">
-                                
-                            </div>
-                        </div>
+                    <div class="banner__search">
+                        <img src="img/loop.png" alt="loop" class="banner__search-img">
+                        <input type="text" class="banner__search-input" placeholder="ПОШУК ПОЛЬОТІВ">
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="footer__body">
-                <div class="footer__title">
-                    <span class="footer__title-part">
-                        Ivano-Frankivsk Airport © 2021 ШКМ
-                    </span>
                 </div>
             </div>
         </div>
