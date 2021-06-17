@@ -17,13 +17,14 @@
                     <h2 class="header__title-text"><a href="index.html">IVANO-FRANKIVSK AIRPORT</a></h2>
                     <img src="img/logo.png" alt="logo" class="header__title-img">
                 </div>
-                
+
                 <ul class="header__nav">
                     <li class="header__nav-item"><a href="#">Графік</a></li>
                     <li class="header__nav-item"><a href="#">Квитки</a></li>
                     <li class="header__nav-item"><a href="aboutus.html">Про нас</a></li>
                     <li class="header__nav-item"><a href="#">Туризм</a></li>
-                    <li class="header__nav-item header__search"><a href="#"><img src="img/loop.png" alt="search"></a></li>
+                    <li class="header__nav-item header__search"><a href="#"><img src="img/loop.png" alt="search"></a>
+                    </li>
                 </ul>
             </div>
             <div class="header__banner mian__header-banner">
@@ -48,7 +49,8 @@
                         </div>
                         <div class="banner__button banner__schedule-departure">
                             <p class="banner__buttons-text">ВІДПРАВЛЕННЯ</p>
-                            <img src="img/right-down.png" style="transform: rotate(-90deg);" alt="arrow-top-right" class="banner__buttons-img">
+                            <img src="img/right-down.png" style="transform: rotate(-90deg);" alt="arrow-top-right"
+                                class="banner__buttons-img">
                         </div>
                     </div>
                     <div class="banner__search">
@@ -56,6 +58,124 @@
                         <input type="text" class="banner__search-input" placeholder="ПОШУК ПОЛЬОТІВ">
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="flights">
+            <table class="flights__table">
+                <tr class="flights__table-tr">
+                    <th class="flights__table-th">РЕЙС</th>
+                    <th class="flights__table-th">ПЕРЕВІЗНИК</th>
+                    <th class="flights__table-th">ПУНКТ ПРИЗНАЧЕННЯ</th>
+                    <th class="flights__table-th">ЧАС ЗА РОЗКЛАДОМ</th>
+                    <th class="flights__table-th">ТЕРМІНАЛ</th>
+                    <th class="flights__table-th">СТАТУС ПОЛЬОТУ</th>
+                </tr>
+                <tr class="flights__table-tr">
+                    <td class="flights__table-td">PS 6633</td>
+                    <td class="flights__table-td">SkyUp Airlines</td>
+                    <td class="flights__table-td">ANTALYA</td>
+                    <td class="flights__table-td">10:00, 14 ЧЕРВНЯ</td>
+                    <td class="flights__table-td">A</td>
+                    <td class="flights__table-td">ОЧІКУЄТЬСЯ</td>
+                </tr>
+                <tr class="flights__table-tr">
+                    <td class="flights__table-td">PS 6633</td>
+                    <td class="flights__table-td">SkyUp Airlines</td>
+                    <td class="flights__table-td">ANTALYA</td>
+                    <td class="flights__table-td">10:00, 14 ЧЕРВНЯ</td>
+                    <td class="flights__table-td">A</td>
+                    <td class="flights__table-td">ОЧІКУЄТЬСЯ</td>
+                </tr>
+                <tr class="flights__table-tr">
+                    <td class="flights__table-td">PS 6633</td>
+                    <td class="flights__table-td">SkyUp Airlines</td>
+                    <td class="flights__table-td">ANTALYA</td>
+                    <td class="flights__table-td">10:00, 14 ЧЕРВНЯ</td>
+                    <td class="flights__table-td">A</td>
+                    <td class="flights__table-td">ОЧІКУЄТЬСЯ</td>
+                </tr>
+                <tr class="flights__table-tr">
+                    <td class="flights__table-td">PS 6633</td>
+                    <td class="flights__table-td">SkyUp Airlines</td>
+                    <td class="flights__table-td">ANTALYA</td>
+                    <td class="flights__table-td">10:00, 14 ЧЕРВНЯ</td>
+                    <td class="flights__table-td">A</td>
+                    <td class="flights__table-td">ОЧІКУЄТЬСЯ</td>
+                </tr>
+            </table>
+            <a class="flights__button" href="#">
+                <p class="flights__button-text">Всі рейси</p>
+                <img src="img/arrow__right.png" alt="arrow__right" class="flights__button-img">
+            </a>
+        </div>
+        <div class="searchtickets">
+            <div class="searchtickets__body">
+                <h2 class="searchtickets__title">ПОШУК КВИТКІВ</h2>
+                <p class="searchtickets__subtitle">Тільки найнижчі ціни на авіактивки</p>
+                <div class="searchtickets__form">
+                    <div class="searchtickets__block">
+                        <label for="passengers" class="searchtickets__label">Звідки</label>
+                        <input type="text" id="where" class="searchtickets__input" value="ІВАНО-ФРАНКІВСЬК (IF UA)">
+                    </div>
+                    <div class="searchtickets__block">
+                        <label for="passengers" class="searchtickets__label">Куди</label>
+                        <input type="text" id="where" class="searchtickets__input" value="ХУРГАДА (Egypt Cairo)">
+                    </div>
+                    <div class="searchtickets__dates">
+                        <div class="searchtickets__block">
+                            <label for="passengers" class="searchtickets__label">Дата відправлення</label>
+                            <input type="date" id="dateOfDeparture" class="searchtickets__input searchtickets__dateOfDeparture">
+                        </div>
+                        <div class="searchtickets__block">
+                            <label for="passengers" class="searchtickets__label">Дата прибуття</label>
+                            <input type="date" id="dateOfArrival" class="searchtickets__input searchtickets__dateOfArrival">
+                        </div>
+                    </div>
+                    <div class="searchtickets__block">
+                        <label for="passengers" class="searchtickets__label">Пасажири</label>
+                        <input type="text" id="passengers" class="searchtickets__input" value="1 пас. (економ)">
+                    </div>
+                    <div class="searchtickets__button">
+                        <p class="searchtickets__button-text">ШУКАТИ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="travelideas">
+            <div class="travelideas__title">
+                <h2 class="travelideas__title-text">ІДЕЇ ДЛЯ ПОДОРОЖЕЙ</h2>
+            </div>
+            <div class="travelideas__images">
+                <div class="travelideas__image travelideas__image-one"></div>
+                <div class="travelideas__image travelideas__image-two"></div>
+                <div class="travelideas__image travelideas__image-three"></div>
+                <div class="travelideas__image travelideas__image-four"></div>
+            </div>
+            <div class="travelideas__subtitle">
+                <h2 class="travelideas__subtitle-text">ЦІКАВІ ІДЕЇ ДЛЯ ПОДОРОЖЕЙ ВІД КОМАНДИ АЄРОПОРТУ!</h2>
+            </div>
+        </div>
+        <div class="covid">
+            <h2 class="covid__title">COVID-19</h2>
+            <p class="covid__subtitle">Шановні пасажири!</p>
+            <p class="covid__text">У зв’язку з розповсюдженням коронавірусної інфекції<br />
+                графік польотів може бути змінений!<br />
+                Дякуємо за розуміння!</p>
+        </div>
+        <div class="footer">
+            <div class="footer__contact">
+                <h2 class="footer__contact-title">
+                    Ivano-Frankivsk Airport
+                </h2>
+                <p class="footer__contact-numberphone">
+                    Довідкове бюро: +097-000-000
+                </p>
+                <div class="footer__nets">
+                    <a href="#"><img src="img/facebook.png" alt="facebook" class="footer__nets-item"></a>
+                    <a href="#"><img src="img/instagram.png" alt="instagram" class="footer__nets-item"></a>
+                    <a href="#"><img src="img/telegram.png" alt="telegram" class="footer__nets-item"></a>
+                </div>
+                <p class="footer__copyright">© 2021 Ivano-Frankivsk Airport</p>
             </div>
         </div>
     </div>

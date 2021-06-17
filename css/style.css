@@ -39,6 +39,7 @@ img{
 }
 .main__header{
     background-image: url(../img/main__background.png);
+    background-attachment: fixed;
 }
 .header__topblock{
     width: 100%;
@@ -240,6 +241,281 @@ img{
 }
 
 
+/* FLIGHTS */
+.flights{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 22px 56px;
+}
+.flights__table{
+    width: 100%;
+    height: auto;
+    border-spacing: 0;
+    margin-bottom: 20px;
+}
+.flights__table-th{
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 45px;
+    color: #6D6D6D;
+}
+.flights__table-td{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 45px;
+    color: #000000;
+}
+.flights__button{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.flights__button-text{
+    margin-right: 8px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #6D6D6D;
+    transition: 0.3s;
+}
+.flights__button:hover > .flights__button-text{
+    color: #000000;
+    margin-right: 15px;
+}
+.flights__button-img{
+    width: 20px;
+}
+
+
+
+
+
+/* SEARCH TICKETS */
+.searchtickets{
+    width: 100%;
+    height: auto;
+    padding: 22px 56px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.searchtickets__body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.searchtickets__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.searchtickets__subtitle{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17.5px;
+    color: #000000;
+    margin-bottom: 23px;
+}
+.searchtickets__form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.searchtickets__form > .searchtickets__block:nth-child(1){
+    width: 21.8%;
+}
+.searchtickets__form > .searchtickets__block:nth-child(2){
+    width: 21.8%;
+}
+.searchtickets__dates{
+    width: 29.3%;
+}
+.searchtickets__form > .searchtickets__block:nth-child(4){
+    width: 14.8%;
+}
+.searchtickets__button{
+    width: 8.8%;
+}
+.searchtickets__dates>.searchtickets__block{
+    width: 50%;
+}
+.searchtickets__block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5px 11px;
+    border: 0.5px solid #808080;
+    border-radius: 2px;
+}
+.searchtickets__dates{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.searchtickets__dates > .searchtickets__block{
+    padding: 4px 11px;
+}
+.searchtickets__label{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: #6D6D6D;
+    height: 50%;
+}
+.searchtickets__input{
+    width: 100%;
+    height: 50%;
+    background: none;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.searchtickets__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #33FF12;
+    cursor: pointer;
+    padding: 15.75px 0;
+}
+.searchtickets__button-text{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+/* TRAVEL IDEAS */
+.travelideas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 75px 56px;
+}
+.travelideas__title{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+}
+.travelideas__title-text{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: #000000;
+}
+.travelideas__images{
+    width: 100%;
+    height: 325px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100%;
+    grid-gap: 25px;
+    margin-bottom: 25px;
+}
+.travelideas__image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.travelideas__image-one{
+    background-image: url(../img/img1.png);
+}
+.travelideas__image-two{
+    background-image: url(../img/img2.png);
+}
+.travelideas__image-three{
+    background-image: url(../img/img3.png);
+}
+.travelideas__image-four{
+    background-image: url(../img/img4.png);
+}
+.travelideas__subtitle{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/footer_background.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.travelideas__subtitle-text{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 29px;
+    color: #FFFFFF;
+}
+
+
+
+
+
+/* COVID */
+.covid{
+    width: 100%;
+    height: 350px;
+    background-image: url(../img/covid.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 34px 0 0 69px;
+}
+.covid__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.covid__subtitle{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    color: #FFFFFF;
+    margin-bottom: 23px;
+}
+.covid__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    color: #FFFFFF;
+}
+
+
+
+
 /* CONTENT */
 .content{
     width: 100%;
@@ -287,7 +563,7 @@ img{
 /* FOOTER */
 .footer{
     width: 100%;
-    height: 181px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -296,10 +572,11 @@ img{
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+    position: relative;
 }
 .footer__contact{
     width: auto;
-    height: 130px;
+    height: 125px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -339,7 +616,15 @@ img{
     width: 32px;
     cursor: pointer;
 }
-
+.footer__copyright{
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 75%;
+    left: 40%;
+}
 
 
 
