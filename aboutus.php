@@ -14,15 +14,14 @@
         <div class="header aboutus__header">
             <div class="header__topblock">
                 <div class="header__title">
-                    <h2 class="header__title-text"><a href="index.html">IVANO-FRANKIVSK AIRPORT</a></h2>
+                    <h2 class="header__title-text"><a href="main.php">IVANO-FRANKIVSK AIRPORT</a></h2>
                     <img src="img/logo.png" alt="logo" class="header__title-img">
                 </div>
-                
                 <ul class="header__nav">
-                    <li class="header__nav-item"><a href="#">Графік</a></li>
-                    <li class="header__nav-item"><a href="#">Квитки</a></li>
-                    <li class="header__nav-item"><a href="#">Про нас</a></li>
-                    <li class="header__nav-item"><a href="tourism.html">Туризм</a></li>
+                    <li class="header__nav-item"><a href="flight.php">Графік</a></li>
+                    <li class="header__nav-item"><a href="tickets.php">Квитки</a></li>
+                    <li class="header__nav-item"><a href="aboutus.php">Про нас</a></li>
+                    <li class="header__nav-item"><a href="tourism.php">Туризм</a></li>
                     <li class="header__nav-item header__search"><a href="#"><img src="img/loop.png" alt="search"></a></li>
                 </ul>
             </div>

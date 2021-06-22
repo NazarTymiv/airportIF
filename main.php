@@ -14,17 +14,15 @@
         <div class="header main__header">
             <div class="header__topblock">
                 <div class="header__title">
-                    <h2 class="header__title-text"><a href="index.html">IVANO-FRANKIVSK AIRPORT</a></h2>
+                    <h2 class="header__title-text"><a href="main.php">IVANO-FRANKIVSK AIRPORT</a></h2>
                     <img src="img/logo.png" alt="logo" class="header__title-img">
                 </div>
-
                 <ul class="header__nav">
-                    <li class="header__nav-item"><a href="flight.html">Графік</a></li>
-                    <li class="header__nav-item"><a href="tickets.html">Квитки</a></li>
-                    <li class="header__nav-item"><a href="aboutus.html">Про нас</a></li>
-                    <li class="header__nav-item"><a href="tourism.html">Туризм</a></li>
-                    <li class="header__nav-item header__search"><a href="#"><img src="img/loop.png" alt="search"></a>
-                    </li>
+                    <li class="header__nav-item"><a href="flight.php">Графік</a></li>
+                    <li class="header__nav-item"><a href="tickets.php">Квитки</a></li>
+                    <li class="header__nav-item"><a href="aboutus.php">Про нас</a></li>
+                    <li class="header__nav-item"><a href="tourism.php">Туризм</a></li>
+                    <li class="header__nav-item header__search"><a href="#"><img src="img/loop.png" alt="search"></a></li>
                 </ul>
             </div>
             <div class="header__banner mian__header-banner">
@@ -70,38 +68,37 @@
                     <th class="flights__table-th">ТЕРМІНАЛ</th>
                     <th class="flights__table-th">СТАТУС ПОЛЬОТУ</th>
                 </tr>
-                <tr class="flights__table-tr">
-                    <td class="flights__table-td">PS 6633</td>
-                    <td class="flights__table-td">SkyUp Airlines</td>
-                    <td class="flights__table-td">ANTALYA</td>
-                    <td class="flights__table-td">10:00, 14 ЧЕРВНЯ</td>
-                    <td class="flights__table-td">A</td>
-                    <td class="flights__table-td">ОЧІКУЄТЬСЯ</td>
-                </tr>
-                <tr class="flights__table-tr">
-                    <td class="flights__table-td">PS 6633</td>
-                    <td class="flights__table-td">SkyUp Airlines</td>
-                    <td class="flights__table-td">ANTALYA</td>
-                    <td class="flights__table-td">10:00, 14 ЧЕРВНЯ</td>
-                    <td class="flights__table-td">A</td>
-                    <td class="flights__table-td">ОЧІКУЄТЬСЯ</td>
-                </tr>
-                <tr class="flights__table-tr">
-                    <td class="flights__table-td">PS 6633</td>
-                    <td class="flights__table-td">SkyUp Airlines</td>
-                    <td class="flights__table-td">ANTALYA</td>
-                    <td class="flights__table-td">10:00, 14 ЧЕРВНЯ</td>
-                    <td class="flights__table-td">A</td>
-                    <td class="flights__table-td">ОЧІКУЄТЬСЯ</td>
-                </tr>
-                <tr class="flights__table-tr">
-                    <td class="flights__table-td">PS 6633</td>
-                    <td class="flights__table-td">SkyUp Airlines</td>
-                    <td class="flights__table-td">ANTALYA</td>
-                    <td class="flights__table-td">10:00, 14 ЧЕРВНЯ</td>
-                    <td class="flights__table-td">A</td>
-                    <td class="flights__table-td">ОЧІКУЄТЬСЯ</td>
-                </tr>
+                <?php
+                    $servername = "localhost:3306/airport";
+                    $username = "airport";
+                    $password = "Airport009";
+                
+                    // Create connection
+                    $conn = mysqli_connect($servername, $username, $password);
+                
+                    // Check connection
+                    if (!$conn) {
+                        die("Connection failed: " . mysqli_connect_error());
+                    }
+
+                    $result = $conn->query("SELECT * FROM airport.flights limit 5");
+
+                    if ($result->num_rows > 0) {
+                        while($row = $result->fetch_assoc()) {
+                            echo 
+                            '<tr class="flights__table-tr">' .
+                                '<td class="flights__table-td">PS ' . $row["code"] . "</td>" .
+                                '<td class="flights__table-td">' . $row["arrival"] . "</td>" .
+                                '<td class="flights__table-td">' . $row["destination"] . "</td>" .
+                                '<td class="flights__table-td">' . $row["time_arriv"] . " - " . $row["time_dest"] . "</td>" .
+                                '<td class="flights__table-td">' . $row["plane_id"] . "</td>" .
+                                '<td class="flights__table-td">' . $row["day"] . "</td>" .
+                            '</tr>';
+                        }
+                    } else {
+                        echo "0 results";
+                    }
+                ?>
             </table>
             <a class="flights__button" href="#">
                 <p class="flights__button-text">Всі рейси</p>
