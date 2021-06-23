@@ -56,6 +56,38 @@
                         <label for="passengers" class="tickets__form-label">Пасажири</label>
                         <input type="text" id="passengers" class="tickets__form-input" value="1 пас. (економ)">
                     </div>
+					<div class="tickets__form-choose">
+                        <span class="tickets__form-item-text">
+							Дорослі
+						</span>
+						<div class="tickets__form-choose-box">
+							<button class="choose__box-plus">
+								+
+							</button>
+							<div class="choose__box-amount">
+								1
+							</div>
+							<button class="choose__box-negative">
+								-
+							</button>
+						</div>
+                    </div>
+					<div class="tickets__form-choose">
+                        <span class="tickets__form-item-text">
+							Діти
+						</span>
+						<div class="tickets__form-choose-box">
+							<button class="choose__box-plus">
+								+
+							</button>
+							<div class="choose__box-amount">
+								1
+							</div>
+							<button class="choose__box-negative">
+								-
+							</button>
+						</div>
+                    </div>
                     <div class="tickets__form-button">
                         <p class="tickets__button-part">БРОНЮВАТИ</p>
                     </div>

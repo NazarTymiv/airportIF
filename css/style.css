@@ -853,7 +853,7 @@ background: #C4C4C4;
 }
 .tickets__form{
     width: 50%;
-    height: 746px;
+    height: 846px;
     background: #41454D;
     padding: 56px 59px;
     display: flex;
@@ -874,6 +874,9 @@ background: #C4C4C4;
 }
 .tickets__form > .tickets__form-item:nth-child(5){
     width: 30%;
+}
+.tickets__form > .tickets__form-item:nth-child(6){
+    width: 20%;
 }
 .tickets__form-item{
     background: white;
@@ -896,6 +899,50 @@ background: #C4C4C4;
     font-weight: 400;
     font-size: 15px;
     color: #000000;
+}
+.tickets__form-input{
+    width: 100%;
+    height: 50%;
+    background: none;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.tickets__form-choose{
+    margin-top: 20px;
+    width: 30%;
+    height: auto;
+    display: flex;
+}
+.tickets__form-item-text{
+    font-size: 20px;
+    color: white;
+}
+.tickets__form-choose-box{
+    display: flex;
+    margin-left: 20px;
+}
+.choose__box-plus{
+    margin-right: 15px;
+    color: white;
+    background: none;
+    border: none;
+}
+.choose__box-amount{
+    width: 20px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.choose__box-negative{
+    margin-left: 15px;
+    color: white;
+    background: none;
+    border: none;
 }
 .tickets__form-button{
     width: 30%;
