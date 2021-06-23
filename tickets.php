@@ -35,63 +35,59 @@
                         РЕЙСИ З ІВАНО-ФРАНКІВСЬКА
                     </span>
                 </div>
-                <div class="tickets__form">
+                <form action="index.php" class="tickets__form" method="post">
                     <div class="tickets__form-item">
-                        <label for="passengers" class="tickets__form-label">Звідки</label>
-                        <input type="text" id="where" class="tickets__form-input" value="ІВАНО-ФРАНКІВСЬК (IF UA)">
+                        <label for="whereon" class="tickets__form-label">Звідки</label>
+						<select name="whereon" id="whereon" class="tickets__form-select">
+							<option value="Ivano-Frankivsk">Ivano-Frankivsk</option>
+						</select>
                     </div>
                     <div class="tickets__form-item">
-                        <label for="passengers" class="tickets__form-label">Куди</label>
-                        <input type="text" id="where" class="tickets__form-input" value="ХУРГАДА (Egypt Cairo)">
+                        <label for="whereout" class="tickets__form-label">Куди</label>
+						<select name="whereout" id="whereout" class="tickets__form-select">
+							<?php
+								$servername = "localhost:3306/airport";
+								$username = "airport";
+								$password = "Airport009";
+							
+								// Create connection
+								$conn = mysqli_connect($servername, $username, $password);
+							
+								// Check connection
+								if (!$conn) {
+									die("Connection failed: " . mysqli_connect_error());
+								}
+
+								$result = $conn->query("SELECT distinct destination FROM airport.flights");
+
+								if ($result->num_rows > 0) {
+									while($row = $result->fetch_assoc()) {
+										echo '<option value="' . $row["destination"] . '">' . $row["destination"] . '</option>';
+									}
+								} else {
+									echo "0 results";
+								}
+							?>
+						</select>
                     </div>
                     <div class="tickets__form-item">
-                        <label for="passengers" class="tickets__form-label">Дата відправлення</label>
-                        <input type="date" id="dateOfDeparture" class="tickets__form-input stickets__form-dated">
+                        <label for="dateOfDeparture" class="tickets__form-label">Дата відправлення</label>
+                        <input type="text" id="dateOfDeparture" class="tickets__form-input stickets__form-dated" name="dateOfDeparture">
                     </div>
                     <div class="tickets__form-item">
-                        <label for="passengers" class="tickets__form-label">Дата прибуття</label>
-                        <input type="date" id="dateOfArrival" class="tickets__form-input stickets__form-datea">
-                    </div>
-                    <div class="tickets__form-item">
-                        <label for="passengers" class="tickets__form-label">Пасажири</label>
-                        <input type="text" id="passengers" class="tickets__form-input" value="1 пас. (економ)">
+                        <label for="dateOfArrival" class="tickets__form-label">Дата прибуття</label>
+                        <input type="text" id="dateOfArrival" class="tickets__form-input stickets__form-datea" name="dateOfArrival">
                     </div>
 					<div class="tickets__form-choose">
-                        <span class="tickets__form-item-text">
-							Дорослі
-						</span>
-						<div class="tickets__form-choose-box">
-							<button class="choose__box-plus">
-								+
-							</button>
-							<div class="choose__box-amount">
-								1
-							</div>
-							<button class="choose__box-negative">
-								-
-							</button>
-						</div>
+                        <label for="adults" class="tickets__form-item-text">Дорослі</label>
+						<input type="number" id="adults" class="tickets__form-number" name="adults" min="0" max="99" value="0">
                     </div>
 					<div class="tickets__form-choose">
-                        <span class="tickets__form-item-text">
-							Діти
-						</span>
-						<div class="tickets__form-choose-box">
-							<button class="choose__box-plus">
-								+
-							</button>
-							<div class="choose__box-amount">
-								1
-							</div>
-							<button class="choose__box-negative">
-								-
-							</button>
-						</div>
+                        <label for="children" class="tickets__form-item-text">Діти</label>
+						<input type="number" id="children" class="tickets__form-number" name="children" min="0" max="99" value="0">
                     </div>
-                    <div class="tickets__form-button">
-                        <p class="tickets__button-part">БРОНЮВАТИ</p>
-                    </div>
-                </div>
+					<input type="submit" class="tickets__form-button tickets__button-part" value="БРОНЮВАТИ">
+				</form>
             </div>
             <div class="footer">
 				<div class="footer__contact">
