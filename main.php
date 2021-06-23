@@ -64,9 +64,9 @@
                     <th class="flights__table-th">РЕЙС</th>
                     <th class="flights__table-th">ПЕРЕВІЗНИК</th>
                     <th class="flights__table-th">ПУНКТ ПРИЗНАЧЕННЯ</th>
-                    <th class="flights__table-th">ЧАС ЗА РОЗКЛАДОМ</th>
-                    <th class="flights__table-th">ТЕРМІНАЛ</th>
-                    <th class="flights__table-th">СТАТУС ПОЛЬОТУ</th>
+                    <th class="flights__table-th">Приліт</th>
+                    <th class="flights__table-th">Виліт</th>
+                    <th class="flights__table-th">Літак</th>
                 </tr>
                 <?php
                     $servername = "localhost:3306/airport";
@@ -87,12 +87,12 @@
                         while($row = $result->fetch_assoc()) {
                             echo 
                             '<tr class="flights__table-tr">' .
-                                '<td class="flights__table-td">PS ' . $row["code"] . "</td>" .
-                                '<td class="flights__table-td">' . $row["arrival"] . "</td>" .
+                                '<td class="flights__table-td">PS ' . $row["flight"] . "</td>" .
+                                '<td class="flights__table-td">' . $row["carrier"] . "</td>" .
                                 '<td class="flights__table-td">' . $row["destination"] . "</td>" .
-                                '<td class="flights__table-td">' . $row["time_arriv"] . " - " . $row["time_dest"] . "</td>" .
-                                '<td class="flights__table-td">' . $row["plane_id"] . "</td>" .
-                                '<td class="flights__table-td">' . $row["day"] . "</td>" .
+                                '<td class="flights__table-td">' . $row["arrival"] . "</td>" .
+                                '<td class="flights__table-td">' . $row["departure"] . "</td>" .
+                                '<td class="flights__table-td">' . $row["plane"] . "</td>" .
                             '</tr>';
                         }
                     } else {
@@ -100,7 +100,7 @@
                     }
                 ?>
             </table>
-            <a class="flights__button" href="#">
+            <a class="flights__button" href="flight.php">
                 <p class="flights__button-text">Всі рейси</p>
                 <img src="img/arrow__right.png" alt="arrow__right" class="flights__button-img">
             </a>
