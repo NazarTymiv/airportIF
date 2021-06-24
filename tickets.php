@@ -72,11 +72,11 @@
                     </div>
                     <div class="tickets__form-item">
                         <label for="dateOfDeparture" class="tickets__form-label">Дата відправлення</label>
-                        <input type="text" id="dateOfDeparture" class="tickets__form-input stickets__form-dated" name="dateOfDeparture">
+                        <input type="date" id="dateOfDeparture" class="tickets__form-input stickets__form-dated" name="dateOfDeparture">
                     </div>
                     <div class="tickets__form-item">
                         <label for="dateOfArrival" class="tickets__form-label">Дата прибуття</label>
-                        <input type="text" id="dateOfArrival" class="tickets__form-input stickets__form-datea" name="dateOfArrival">
+                        <input type="date" id="dateOfArrival" class="tickets__form-input stickets__form-datea" name="dateOfArrival">
                     </div>
 					<div class="tickets__form-choose">
                         <label for="adults" class="tickets__form-item-text">Дорослі</label>

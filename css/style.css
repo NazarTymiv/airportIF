@@ -953,3 +953,8 @@ background: #C4C4C4;
 .tickets__form-number::-webkit-scrollbar{
     display: none;
 }
+.searchtickets-select{
+    width: 100%;
+    height: auto;
+    background: none;
+}

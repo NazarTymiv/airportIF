@@ -111,12 +111,38 @@
                 <p class="searchtickets__subtitle">Тільки найнижчі ціни на авіактивки</p>
                 <div class="searchtickets__form">
                     <div class="searchtickets__block">
-                        <label for="passengers" class="searchtickets__label">Звідки</label>
-                        <input type="text" id="where" class="searchtickets__input" value="ІВАНО-ФРАНКІВСЬК (IF UA)">
+                        <label for="whereon" class="searchtickets__label">Звідки</label>
+                        <select id="whereon" class="searchtickets-select">
+							<option value="Ivano-Frankivsk">Ivano-Frankivsk</option>
+						</select>
                     </div>
                     <div class="searchtickets__block">
                         <label for="passengers" class="searchtickets__label">Куди</label>
-                        <input type="text" id="where" class="searchtickets__input" value="ХУРГАДА (Egypt Cairo)">
+                        <select id="whereon" class="searchtickets-select">
+							<?php
+								$servername = "localhost:3306/airport";
+								$username = "airport";
+								$password = "Airport009";
+							
+								// Create connection
+								$conn = mysqli_connect($servername, $username, $password);
+							
+								// Check connection
+								if (!$conn) {
+									die("Connection failed: " . mysqli_connect_error());
+								}
+
+								$result = $conn->query("SELECT distinct destination FROM airport.flights");
+
+								if ($result->num_rows > 0) {
+									while($row = $result->fetch_assoc()) {
+										echo '<option value="' . $row["destination"] . '">' . $row["destination"] . '</option>';
+									}
+								} else {
+									echo "0 results";
+								}
+							?>
+						</select>
                     </div>
                     <div class="searchtickets__dates">
                         <div class="searchtickets__block">
@@ -130,7 +156,7 @@
                     </div>
                     <div class="searchtickets__block">
                         <label for="passengers" class="searchtickets__label">Пасажири</label>
-                        <input type="text" id="passengers" class="searchtickets__input" value="1 пас. (економ)">
+                        <input type="number" value="0" max="99" min="0" id="passengers" class="searchtickets__input" value="1 пас. (економ)">
                     </div>
                     <div class="searchtickets__button">
                         <p class="searchtickets__button-text">ШУКАТИ</p>
